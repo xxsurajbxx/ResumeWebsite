@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+		<script src="javascript.js"></script>
+        <title>Suraj R. Bhardwaj</title>
+    </head>
+    <body>
+		<header>
+			<a onclick="toggleSidebar()">&#9776;</a>
+			<h1>Suraj Bhardwaj</h1>
+		</header>
+		
+		<!-- make the progress bar horizontal and position it towards the bottom of the screen -->
+		
+		<div class="progressbar">
+			<div id="pb1" class="sectionLabel active" onclick="progressBar(1)"><h4>Home</h4></div>
+			<div id="pb2" class="sectionLabel" onclick="progressBar(2)"><h4>About Me</h4></div>
+			<div id="pb3" class="sectionLabel" onclick="progressBar(3)"><h4>Experience</h4></div>
+			<div id="pb4" class="sectionLabel" onclick="progressBar(4)"><h4>Education</h4></div>
+			<div id="pb5" class="sectionLabel" onclick="progressBar(5)"><h4>Skills</h4></div>
+		</div>
+		
+        <section class="home">
+			<h1>Suraj Bhardwaj</h1>
+			<p><a href="mailto:surajrbhardwaj@yahoo.com">surajrbhardwaj@yahoo.com</a> | <a href="tel:+1-609-665-7633">(609) 665-7633</a></p>
+			<div class="btn-container">
+				<a href="assets/resume.pdf" target="_blank" rel="noopener"><div>Resume</div></a>
+				<a href="http://github.com/xxsurajbxx" target="_blank" rel="noopener"><div>GitHub</div></a>
+				<a href="https://www.linkedin.com/in/xxsurajbxx/" target="_blank" rel="noopener"><div>LinkedIn</div></a>
+			</div>
+		</section>
+		<section class="aboutMe">
+			<div class="abMeContent">
+				<img src="assets/imgs/surajwebsitephoto.jpeg" alt="Suraj Semi-Professional Photo" class="pfp">
+				<div class="words">
+					<h1 style="display: inline; font-family: Cardo; padding: 5px; font-size: 30px; background-color: #000000; color: #FFFFFF;">About Me</h1>
+					<p style="font-family: Open Sans, sans-serif; padding: 8px; font-size: 18px; background-color: #DCDCDC; border: 3px solid #000000;">Hi, my name is Suraj Rajesh Bhardwaj. I'm an accelerated BS/MS student in my second year as a <strong>Computer Science major with minors in Data Analytics and Innovation and Entrepreneurship</strong> in the Honors College at the New Jersey Institute of Technology <strong>(NJIT)</strong>. However, despite being in my second year in college, <strong>I have junior credit standing in my major</strong>. I have been pursuing my passion in CS since my freshman year in high school and taught myself enough to set me a full year ahead of my peers. I hope to apply my education and passion in CS as well as my interest in finance towards my career.</p>
+				</div>
+			</div>
+		</section>
+		<section class="experience">
+			<h1 class="sectionTitle">Work/Volunteer Experience</h1>
+			<div style="display: flex; flex-direction: row; align-items: center;">
+				<div style="width: 50px; margin-left: 50px; transform: translate(-50%, 0%);"><div class="slideshow-btn" onclick="changeSlides(-1)">&#8592;</div></div>
+				<div class="carousel">
+					<div class="slide" id="s1">
+						<img src="assets/imgs/microscope.png" alt="Microscope Logo" style="width: 300px; height: 300px;">
+						<h3>Undergraduate Research Fellow</h3>
+						<ul>
+							<li>Worked with A.I. Technologies to experimentally determine the optimal machine learning algorithm to estimate gait phase using data collected from 3 inertial measurement unit sensors.</li>
+							<li>Used Sklearn python library to train and test a machine learning model.</li>
+							<li>Manipulated data for use by the machine learning model.</li>
+						</ul>
+					</div>
+					<div class="slide" id="s2">
+						<img src="assets/imgs/varsitytutors.png" alt="Varsity Tutors Logo" style="margin-top: 50px; margin-bottom: 35px; width: 300px;">
+						<h3>Online Tutor</h3>
+						<ul>
+							<li>Certified to teach SAT, Python, Java, Physics, and Math.</li>
+							<li>Connected with students to ensure emotional as well as academic wellbeing.</li>
+							<li>Worked with parents to quell any concerns regarding their children’s academic performance.</li>
+							<li>Manipulated data for use by the machine learning model.</li>
+						</ul>
+					</div>
+					<div class="slide" id="s3">
+						<img src="assets/imgs/rha.png" alt="NJIT Reisdence Hall Association Logo" style="width: 270px; height: 270px; margin-top: 15px;">
+						<h3>Residence Hall Association Treasurer</h3>
+						<ul>
+							<li>Managed budget to ensure that all funds were expanded optimally whilst remainung within budget.</li>
+							<li>Collaborated with others to plan events and ways to improve the lives of residents.</li>
+							<li>Worked with rest of the executive board to improve the quality of life for the NJIT resident community.</li>
+							<li>Managed assets to ensure they were used to their maximal output and generated additional funds.</li>
+						</ul>
+					</div>
+					<div class="slide" id="s4">
+						<img src="assets/imgs/adhc.jpeg" alt="Albert Dorman's Honors College Logo" style="width: 275px; height: 275px;">
+						<h3 style="margin-top: 20px; margin-bottom: 15px;">Albert Dorman's Honors College Social Media Collective Member</h3>
+						<ul>
+							<li>Managed the Albert Dorman's Honors College challenge instagram account.</li>
+							<li>Created posts to raise awareness of the Albert Dorman’s Honors College Challenge and encourage donations.</li>
+							<li>Navigated a collaborative group environment.</li>
+						</ul>
+					</div>
+					<div class="slide" id="s5">
+						<img src="assets/imgs/homefront.png" alt="Homefront Logo" style="height: 150px; margin-top: 75px; margin-bottom: 25px;">
+						<h3>Summer Camp Counselor</h3>
+						<ul>
+							<li>Organized and participated in activities with 100+ children aging from 5-15 years old.</li>
+							<li>Prevented conflict between children despite their individual circumstances (mental illness, domestic issues etc.)..</li>
+							<li>Collaborated with other counselors to provide a holistic summer camp experience they otherwise wouldnt be able to afford.</li>
+						</ul>
+					</div>
+					<div class="slide" id="s6">
+						<img src="assets/imgs/codeucate.png" alt="Codeucate Logo" style="width: 275px; height: 275px; margin-top: 20px; margin-bottom: 20px;">
+						<h3>Programming Teacher</h3>
+						<ul>
+							<li>Educated children on concepts in multiple programming languages (including java and python).</li>
+							<li>Engaged multiple students at once aging 8-13 through a virtual platform.</li>
+							<li>Followed an extensive curriculum through the course of 4 weeks (per session).</li>
+						</ul>
+					</div>
+				</div>
+				<div style="width: 50px; margin-left: 50px; transform: translate(-50%, 0%);"><div class="slideshow-btn" onclick="changeSlides(1)">&#8594;</div></div>
+			</div>
+			<div class="circlesContainer">
+				<div id="c1" class="circle activeCircle" onclick="changeSlideTo(1)"></div>
+				<div id="c2" class="circle" onclick="changeSlideTo(2)"></div>
+				<div id="c3" class="circle" onclick="changeSlideTo(3)"></div>
+				<div id="c4" class="circle" onclick="changeSlideTo(4)"></div>
+				<div id="c5" class="circle" onclick="changeSlideTo(5)"></div>
+				<div id="c6" class="circle" onclick="changeSlideTo(6)"></div>
+			</div>
+		</section>
+		<section class="education">
+			<h1 class="sectionTitle" style="margin-top: 0px;">Education</h1>
+			<div class="eduContent">
+				<div class="eduContentBox">
+					<div class="eduContentContainer" style="text-align: right;">
+						<h1>West Windsor-Plainsboro High School North</h1>
+						<ul style="direction: rtl; list-style-type: none;">
+							<li>Weighted GPA: 4.32</li>
+							<li>Unweighted GPA: 3.65</li>
+							<li>SAT: 1540</li>
+							<li>AP Scholar with Distinction</li>
+							<li>National Merit Scholarship Commended Student</li>
+						</ul>
+					</div>
+				</div>
+				<div class="eduContentBox" style="text-align: left;">
+					<div class="eduContentContainer" style="text-align: left;">
+						<h1>New Jersey Institute of Technology Honors College</h1>
+						<ul style="list-style-type: none;">
+							<li>GPA: 3.86</li>
+							<li>Credit Standing</li>
+							<li>Major: B.S. Computer Science</li>
+							<li>Minors: Innovation and Entreprenuership and Data Analytics</li>
+							<li>Honors Tuition and Room Scholarship</li>
+							<li>Dean's List: Fall '22 and Spring '23</li>
+							<li>Microsoft Office Specialist: Excel Expert (Excel 2019) Certification</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="technicalSkills">
+			<h1 class="sectionTitle" style="margin-top: 25vh;">Technical Skills</h1>
+			<div class="skillBox">
+				<div class="skillContainer">
+					<h1 style="margin-right: 15px; font-size: 20px;">Python</h1>
+					<div class="progressBarOutline">
+						<div style="width: 75px; height: 10px; background-color: #DAE900"></div>
+					</div>
+				</div>
+				<div class="skillContainer">
+					<h1 style="margin-right: 15px; font-size: 20px;">C++</h1>
+					<div class="progressBarOutline">
+						<div style="width: 90px; height: 10px; background-color: #009900"></div>
+					</div>
+				</div>
+				<div class="skillContainer">
+					<h1 style="margin-right: 15px; font-size: 20px;">Java<h1>
+					<div class="progressBarOutline">
+						<div style="width: 85px; height: 10px; background-color: #009900"></div>
+					</div>
+				</div>
+				<div class="skillContainer">
+					<h1 style="margin-right: 15px; font-size: 20px;">HTML</h1>
+					<div class="progressBarOutline">
+						<div style="width: 80px; height: 10px; background-color: #009900"></div>
+					</div>
+				</div>
+				<div class="skillContainer">
+					<h1 style="margin-right: 15px; font-size: 20px;">CSS</h1>
+					<div class="progressBarOutline">
+						<div style="width: 80px; height: 10px; background-color: #009900"></div>
+					</div>
+				</div>
+				<div class="skillContainer">
+					<h1 style="margin-right: 15px; font-size: 20px;">Javascript</h1>
+					<div class="progressBarOutline">
+						<div style="width: 40px; height: 10px; background-color: #DAE900"></div>
+					</div>
+				</div>
+				<div class="skillContainer">
+					<h1 style="margin-right: 15px; font-size: 20px;">SQL</h1>
+					<div class="progressBarOutline">
+						<div style="width: 30px; height: 10px; background-color: #CC0000"></div>
+					</div>
+				</div>
+				<div class="skillContainer">
+					<h1 style="margin-right: 15px; font-size: 20px;">Excel</h1>
+					<div class="progressBarOutline">
+						<div style="width: 100px; height: 10px; background-color: #009900"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </body>
+</html>

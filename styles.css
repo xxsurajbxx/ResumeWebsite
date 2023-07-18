@@ -235,6 +235,23 @@ header a {
 	color: #000000;
 }
 
+.words h1 {
+	display: inline;
+	font-family: Cardo;
+	padding: 5px;
+	font-size: 30px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.words p {
+	font-family: Open Sans, sans-serif;
+	padding: 8px;
+	font-size: 18px;
+	background-color: #DCDCDC;
+	border: 3px solid #000000;
+}
+
 .pfp {
 	width: 400px;
     height: 400px;
@@ -420,12 +437,39 @@ header a {
 	}
 }
 
-/* about me does not get messed up until 1150px */
 
-/* experience does not get messed up until 1000px */
+@media screen and (max-width: 1150px) {
+	.abMeContent {
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.pfp {
+		width: 300px;
+		height: 300px;
+	}
+}
 
-/* education does not get messed up until 950px */
+@media screen and (max-width: 1000px) {
+	.carousel {
+		width: 600px;
+		height: 600px;
+	}
+
+	.slide {
+		width: 600px;
+		height: 600px;
+	}
+	
+	.slide li {
+		width: 550px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+}
 
 /* home page does not get messed up until 600px */
 
-/* skills does not get messed up until 550px */
+/* aboutMe does not get messed up until 600px */

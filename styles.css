@@ -21,20 +21,13 @@
 }
 
 
-
-/* Navbar is only supposed to exist for mobile */
-
-
-
-
-
 html {
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 }
 
 body {
-	margin: 0px;	
+	margin: 0px;
 	overflow-x: hidden;
 }
 
@@ -85,6 +78,8 @@ li {
 
 .btn-container {
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
     justify-content: center;
     align-items: center;
 	margin-top: 45px;
@@ -466,8 +461,102 @@ header a {
 	}
 }
 
+@media screen and (max-width: 750px) {
+	.words {
+		width: 450px;
+	}
+}
+
 @media screen and (max-width: 600px) {
+	.home h1 {
+		font-size: 65px;
+	}
 	
+	.home p {
+		font-size: 16px;
+	}
+	
+	.btn-container {
+		margin-top: 80px;
+		flex-direction: column;
+	}
+	
+	.btn-container a div {
+		width: 150px;
+		padding: 20px 18px 20px 18px;
+		margin-left: 0px;
+		background-color: #B2850B;
+	}
+	
+	.btn-container a {
+		font-size: 15px;
+	}
+	
+	.btn-container a:nth-child(1) div {
+		background-color: #B2850B;
+	}
+
+	.btn-container a:nth-child(2) div {
+		margin-top: 45px;
+		background-color: #000000;
+	}
+
+	.btn-container a:nth-child(3) div {
+		margin-top: 45px;
+		background-color: #0B5AB5;
+	}
+	
+	.carousel {
+		width: 450px;
+		height: 650px;
+	}
+
+	.slide {
+		width: 450px;
+		height: 650px;
+	}
+	
+	.slide li {
+		width: 400px;
+	}
+	
+	.ssbtn {
+		display: none;
+	}
+	
+	.circle {
+		height: 18px;
+		width: 18px;
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+
+	.circle:hover {
+		height: 25px;
+		width: 25px;
+	}
+
+	.activeCircle {
+		height: 25px;
+		width: 25px;
+	}
+	
+	.eduContentBox {
+		margin: 15px;
+	}
+		
+	.eduContentBox:first-child {
+		margin-top: 0px;
+	}
+	
+	.eduContentBox:last-child {
+		margin-bottom: 0px;
+	}
+	
+	.eduContentContainer {
+		margin: 10px;
+		padding-bottom: 15px;
+	}
 }
 
 /* home page does not get messed up until 600px */

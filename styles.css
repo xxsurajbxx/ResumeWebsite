@@ -594,7 +594,25 @@ header a {
 	}
 }
 
+@media screen and (max-width: 550px) {
+	.eduContentContainer h1 {
+		font-family: Cardo;
+		font-size: 21px;
+		margin: 15px 5px 0px 5px;
+	}
+
+	.eduContentContainer ul li {
+		margin: 4px 0 4px 0;
+		font-size: 14px;
+	}
+}
+
 @media screen and (max-width: 450px) {
+	header h1 {
+		font-size: 25px;
+		margin-left: 13px;
+		margin-top: 18px;
+	}
 	.sectionTitle {
 		font-family: Roboto Condensed, sans-serif;
 		margin-bottom: 15px;
@@ -603,6 +621,7 @@ header a {
 	
 	.home h1 {
 		font-size: 50px;
+		padding-top: 25vh;
 	}
 	
 	.home p {
@@ -702,10 +721,8 @@ header a {
 		width: 175px;
 		height: 175px;
 	}
-	
+
 	.skillBox {
 		width: 350px;
 	}
 }
-
-/* fix education */

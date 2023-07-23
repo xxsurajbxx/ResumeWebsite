@@ -609,9 +609,7 @@ header a {
 
 @media screen and (max-width: 450px) {
 	header h1 {
-		font-size: 25px;
-		margin-left: 13px;
-		margin-top: 18px;
+		display: none;
 	}
 	.sectionTitle {
 		font-family: Roboto Condensed, sans-serif;
@@ -642,12 +640,12 @@ header a {
 	}
 	
 	.pfp {
-		width: 200px;
-		height: 200px;
+		width: 180px;
+		height: 180px;
 	}
 	
 	.words {
-		width: 350px;
+		width: 330px;
 		margin-top: 30px;
 		margin-left: 20px;
 		color: #000000;
@@ -658,21 +656,24 @@ header a {
 	}
 
 	.words p {
-		font-size: 15px;
+		font-size: 13px;
 	}
 	
 	.carousel {
-		width: 350px;
-		height: 500px;
+		width: 325px;
+		height: 450px;
 	}
 
 	.slide {
-		width: 350px;
-		height: 500px;
+		width: 325px;
+		height: 450px;
 	}
-	
+	.slide h3 {
+		font-size: 17px;
+	}
 	.slide li {
-		width: 300px;
+		width: 275px;
+		font-size: 13px;
 	}
 	
 	.circle {
@@ -691,35 +692,40 @@ header a {
 	}
 	
 	.microscope {
-		width: 175px;
-		height: 175px;
+		width: 150px;
+		height: 150px;
 	}
 	
 	.varTutors {
-		width: 200px;
+		width: 175px;
 		margin-top: 40px;
 		margin-bottom: 15px;
 	}
 	
 	.RHAlogo {
-		width: 150px;
-		height: 150px;
+		width: 110px;
+		height: 110px;
 	}
 	
 	.ADHClogo {
-		width: 175px;
-		height: 175px;
+		width: 150px;
+		height: 150px;
 	}
 
 	.HFlogo {
-		height: 100px;
+		height: 90px;
 		margin-top: 50px;
 		margin-bottom: 15px;
 	}
 
 	.Codelogo {
-		width: 175px;
-		height: 175px;
+		width: 150px;
+		height: 150px;
+	}
+
+	.eduContentContainer {
+		margin: 5px;
+		padding-bottom: 10px;
 	}
 
 	.skillBox {

@@ -646,9 +646,7 @@ header a {
 	
 	.words {
 		width: 330px;
-		margin-top: 30px;
-		margin-left: 20px;
-		color: #000000;
+		margin-top: 15px;
 	}
 
 	.words h1 {
@@ -727,8 +725,39 @@ header a {
 		margin: 5px;
 		padding-bottom: 10px;
 	}
+	
+	.eduContentContainer h1 {
+		font-family: Cardo;
+		font-size: 18px;
+	}
+	
+	.eduContentContainer ul li {
+		font-size: 12px;
+	}
 
 	.skillBox {
 		width: 350px;
 	}
 }
+
+/*
+
+
+changes to be made to the experience section:
+	add swipe feature to the carousel so mobile users can swipe through slides
+
+ask schober for ideas on how I can redesign the education section for mobile (new layout)
+
+ideas for new sections:
+	unique life experiences
+		warden institute
+		study aboad
+		gear up florida
+	
+	awards and certifications
+		congressional award
+		Microsoft Office Specialist: Excel Expert (Excel 2019) Certification
+		possibly ap scholar with distinction
+		possibly national merit scholar commended student
+
+*/
